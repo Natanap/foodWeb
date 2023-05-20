@@ -1,0 +1,49 @@
+ERROR - 2023-05-20 00:40:06 --> mysqli_sql_exception: Can't DROP COLUMN `ativo`; check that it exists in C:\xampp\htdocs\food\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\food\system\Database\MySQLi\Connection.php(295): mysqli->query('ALTER TABLE `us...', 0)
+#1 C:\xampp\htdocs\food\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\food\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `us...')
+#3 C:\xampp\htdocs\food\system\Database\Forge.php(771): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `us...')
+#4 C:\xampp\htdocs\food\app\Database\Migrations\2023-05-20-000345_AdicionaColunaAtivoParaUsuarios.php(24): CodeIgniter\Database\Forge->dropColumn('usuarios', 'ativo')
+#5 C:\xampp\htdocs\food\system\Database\MigrationRunner.php(877): App\Database\Migrations\AdicionaColunaAtivoParaUsuarios->down()
+#6 C:\xampp\htdocs\food\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\food\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 C:\xampp\htdocs\food\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\food\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\food\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-05-20 01:23:10 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Migrations\2023-05-20-010415_AdicionaColunaCpfParaUsuarios.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-20 01:23:46 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Migrations\2023-05-20-010415_AdicionaColunaCpfParaUsuarios.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-20 01:24:47 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Migrations\2023-05-20-010415_AdicionaColunaCpfParaUsuarios.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-20 01:25:03 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Migrations\2023-05-20-010415_AdicionaColunaCpfParaUsuarios.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-20 01:25:24 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Migrations\2023-05-20-010415_AdicionaColunaCpfParaUsuarios.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-20 01:25:49 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Migrations\2023-05-20-010415_AdicionaColunaCpfParaUsuarios.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-20 01:26:16 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Migrations\2023-05-20-010415_AdicionaColunaCpfParaUsuarios.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-05-20 01:27:09 --> mysqli_sql_exception: Table 'usuarios' already exists in C:\xampp\htdocs\food\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\food\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\food\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\food\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\food\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\food\app\Database\Migrations\2023-05-16-142657_CriaTabelaUsuarios.php(32): CodeIgniter\Database\Forge->createTable('usuarios')
+#5 C:\xampp\htdocs\food\system\Database\MigrationRunner.php(877): App\Database\Migrations\CriaTabelaUsuarios->up()
+#6 C:\xampp\htdocs\food\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\food\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\food\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\food\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\food\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

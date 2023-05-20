@@ -26,3 +26,15 @@ Stack trace:
 #8 C:\xampp\htdocs\food\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
 #9 C:\xampp\htdocs\food\spark(97): CodeIgniter\CLI\Console->run()
 #10 {main}
+CRITICAL - 2023-05-16 21:40:46 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Seeds\UsuarioSeeder.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-16 21:43:17 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Seeds\UsuarioSeeder.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-16 21:44:56 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Seeds\UsuarioSeeder.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-16 21:46:22 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Database\Seeds\UsuarioSeeder.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
